@@ -1,3 +1,5 @@
+// Fills dummy data 
+// run by command '$ npx prisma seed ' in ../packages/db
 import { PrismaClient } from '@prisma/client'
 import bcrypt from "bcrypt";
 const prisma = new PrismaClient()

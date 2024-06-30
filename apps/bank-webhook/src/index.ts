@@ -1,3 +1,7 @@
+// Simulates a Bank API 
+// Accepts a JSON object and 
+// makes transaction and updates
+// 'onRampTransaction' table 
 import express from "express";
 import db from "@repo/db/client";
 const app = express();

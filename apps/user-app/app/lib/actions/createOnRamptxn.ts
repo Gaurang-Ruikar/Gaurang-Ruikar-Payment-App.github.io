@@ -1,3 +1,8 @@
+// When FE hits 'Add Money' button
+// this script runs on server
+// accepts amount and provider(bank name)
+// creates an entry in onRampTransactions table in Prisma
+// with status 'Processing'
 "use server";
 
 import { getServerSession } from "next-auth";
@@ -15,7 +20,7 @@ export async function createOnRampTransaction(amount: number, provider: string) 
     }
     await prisma.onRampTransaction.create({
         data: {
-            userId: Number(userId), // 1
+            userId: Number(userId), 
             amount: amount,
             status: "Processing",
             startTime: new Date(),
