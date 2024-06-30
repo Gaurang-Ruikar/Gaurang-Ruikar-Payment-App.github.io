@@ -2,6 +2,6 @@
 export default function() {
 // TODO: Add balance and art
     return <div>
-        Dashboard 
+         Test Dashboard 
     </div>
 }
